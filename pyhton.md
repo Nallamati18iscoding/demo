@@ -1,5 +1,7 @@
 
 Q1. Why do we call Python as a general purpose and high-level programming language?
+ans ) heloo bro is iy saving or not pkzzz let me know ra nakodaka git lanjdka
+cdhch
 
 Q2. Why is Python called a dynamically typed language?
 
@@ -261,3 +263,6 @@ E E E E E
 
 asda
 is it saved ????
+is it saving or not ??
+rey labey nakodaka
+
