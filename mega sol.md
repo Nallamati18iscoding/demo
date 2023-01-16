@@ -176,113 +176,247 @@ for num in numbers:
 
 print(lst)
 Q26. What is a string? How can we declare string in Python?
+Ans26. In Python, Strings are arrays of bytes representing Unicode characters.
 
 Q27. How can we access the string using its index?
+Ans27. Sqaure brackets can used to access the elements of the string.
 
 Q28. Write a code to get the desired output of the following
 
 string = "Big Data iNeuron"
 desired_output = "iNeuron"
+
+Ans28.
+
+string[9:16]
+
 Q29. Write a code to get the desired output of the following
 
 string = "Big Data iNeuron"
 desired_output = "norueNi"
+
+Ans29.
+
+string[15:8:-1]
 Q30. Resverse the string given in the above question.
+ans)string[::-1]
 
 Q31. How can you delete entire string at once?
+ans)str1 = "Hello"
+del(str1)
 
 Q32. What is escape sequence?
+ans)
+The "backslash ()" character as an escape character. In other words, it has a special meaning when we use it inside the strings. As the name suggests, the escape character escapes the characters in a string for a brief moment to introduce unique inclusion.
 
 Q33. How can you print the below string?
 
 'iNeuron's Big Data Course'
+
+ans)'iNeuron's Big Data Course'
 Q34. What is a list in Python?
-
+ans)
+Python list are dynamically sized array, declared in languages like C++ and Java. A list is a collection of things, enclosed in [ ] and separated by commas.
 Q35. How can you create a list in Python?
-
+ans)You can create a list by opening and closing the square brackets.
 Q36. How can we access the elements in a list?
+Ans36. We can access the elements in a list by indexing.
 
 Q37. Write a code to access the word "iNeuron" from the given list.
+Ans37.
+
+lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+lst[4][2]
 
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
 Q38. Take a list as an input from the user and find the length of the list.
+Ans38.
 
+n = input("Enter number of elements seprated by space: ").split(" ")
+print(len(n))
 Q39. Add the word "Big" in the 3rd index of the given list.
 
 lst = ["Welcome", "to", "Data", "course"]
+
+Ans39.
+
+lst = ["Welcome", "to", "Data", "course"]
+lst.insert(2, "Big")
+
 Q40. What is a tuple? How is it different from list?
+Ans40. Tuple is a collection of Python objects much like a list. The sequence of values stored in a tuple can be of any type, and they are indexed by integers. Tuples are immutable where as list are mutable. We can also faster through the tuples than the list.
 
 Q41. How can you create a tuple in Python?
+Ans41. We can create tuple using round brackets ().
 
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
+ans) Ans42. No, I can't as tuples are immutable. The work around is it typecast tuple to list and then append.
+tup = ()
+tup = list(tup)
+tup.append("Venkata")
+tup = tuple(tup)
+tup
 
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
+Ans43.Yes, we can.
+
+tup1 = ("Venkata ")
+tup2 = ("Sai")
+tup1+tup2
 
 Q44. Take a tuple as an input and print the count of elements in it.
+Ans44.
+
+x = input("Enter the values separeted by space: ").split(" ")
+x = tuple(x)
+print(len(x))
 
 Q45. What are sets in Python?
+Ans45. A set is an unordered collection of data types that is iterable, mutable and has no duplicate elements. The order of elements in a set is undefined though it may consist of various elements.
 
 Q46. How can you create a set?
+Ans46. We can create set using curly brackets {}. Keep in mind empty {} will result in dictionary hence there must be some value in the brackets.
 
 Q47. Create a set and add "iNeuron" in your set.
+Ans47.
+
+set1 = {"iNeuron"}
+set1
 
 Q48. Try to add multiple values using add() function.
+Ans48.
+
+set1.add("Big")
+set1.add("Data")
+set1
 
 Q49. How is update() different from add()?
+Ans49. We can add more than one element in a single go using update(), but using add() it's not possible.
 
 Q50. What is clear() in sets?
+Ans50. To remove all the elements from the set, clear() function is used.
 
 Q51. What is frozen set?
+Ans51. Frozen sets in Python are immutable objects that only support methods and operators that produce a result without affecting the frozen set or sets to which they are applied. While elements of a set can be modified at any time, elements of the frozen set remain the same after creation.
 
 Q52. How is frozen set different from set?
+Ans52.
+
+--Frozen sets are immutable where as sets are mutable.
+--Sets can't be used as keys in dictionary where as frozen sets can be used.
 
 Q53. What is union() in sets? Explain via code.
+Ans53. Python set Union() Method returns a new set which contains all the items from the original set.
+
+set1 = {2, 4, 5, 6}
+set2 = {4, 6, 7, 8}
+set3 = {7, 8, 9, 10}
+
+print("set1 U set2 : ", set1 | set2)
+
+print("set1 U set2 U set3 :", set1 |set2 | set3)
 
 Q54. What is intersection() in sets? Explain via code.
+Ans54. Python set intersection() method returns a new set with an element that is common to all set
+
+set1 = {2, 4, 5, 6}
+set2 = {4, 6, 7, 8}
+set3 = {4, 6, 8}
+
+print("set1 intersection set2 : ", set1.intersection(set2))
+
+print("set1 intersection set2 intersection set3 :", set1.intersection(set2, set3))
 
 Q55. What is dictionary ibn Python?
+Ans55. Dictionary in Python is a collection of keys values, used to store data values like a map, which, unlike other data types which hold only a single value as an element.
 
 Q56. How is dictionary different from all other data structures.
+Ans56. Dictionary is having key and value pair where as all other data structures have only values in them.
 
 Q57. How can we delare a dictionary in Python?
+Ans57. We can create dictionary using curly brackets {}.
 
 Q58. What will the output of the following?
-
 var = {}
 print(type(var))
+
+ans) dict
+
 Q59. How can we add an element in a dictionary?
+Ans59.
+
+Dict = {}
+Dict[0] = "Hello"
+Dict[1] = "Course: ["Data Science", "Big Data"]"
 
 Q60. Create a dictionary and access all the values in that dictionary.
+Ans60.
+
+Dict = {"Name": "Vishal", "Experience": 3, "Organisation":"iNeuron"}
+for i, j in Dict.items():
+  print(f"Key is {i} and value is {j}")
 
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
+Ans61.
+
+Dict = {"Name": {"f_name":"Vishal", "l_name":"Singh"}, "Experience": 3, "Organisation":"iNeuron"}
+for i, j in Dict["Name"].items():
+  print(f"Key is {i} and value is {j}")
 
 Q62. What is the use of get() function?
+Ans62. get() is also to access the elements in dictionary.
+Dict = {"Name": "Venkata", "Experience": 0, "Organisation":"iNeuron"}
+print(Dict.get("Name"))
 
 Q63. What is the use of items() function?
+Ans63. items() method is used to return the list with all dictionary keys with values.
 
 Q64. What is the use of pop() function?
+ans ) it deletes the last value in list or dict 
 
 Q65. What is the use of popitems() function?
+Ans65. popitem() method removes the last inserted key-value pair from the dictionary and returns it as a tuple.
 
 Q66. What is the use of keys() function?
+Ans66. keys() method returns a view object that displays a list of all the keys in the dictionary.
 
 Q67. What is the use of values() function?
+Ans67. values() is an inbuilt method in Python programming language that returns a view object. The view object contains the values of the dictionary, as a list.
 
 Q68. What are loops in Python?
+Ans68. Loops are used the iterate over a block of statement multiple times
 
 Q69. How many type of loop are there in Python?
+ans) for and while loops 
 
 Q70. What is the difference between for and while loops?
+Ans70. When we know the exact number of iterations, we can use for loop. When we want the to run till a certain condition is true we can use while loop.
 
 Q71. What is the use of continue statement?
+Ans71. Continue Statement skips the execution of the program block from after the continue statement and forces the control to start the next iteration.
 
 Q72. What is the use of break statement?
+Ans72. break statement in Python is used to bring the control out of the loop when some external condition is triggered. break statement is put inside the loop body
 
 Q73. What is the use of pass statement?
+Ans73. The pass statement is a null statement. But the difference between pass and comment is that comment is ignored by the interpreter whereas pass is not ignored.
 
 Q74. What is the use of range() function?
+Ans74. range() function returns a sequence of numbers, in a given range. The most common use of it is to iterate sequence on a sequence of numbers
 
 Q75. How can you loop over a dictionary?
+Ans75.
+
+statesAndCapitals = {
+	'Gujarat': 'Gandhinagar',
+	'Maharashtra': 'Mumbai',
+	'Rajasthan': 'Jaipur',
+	'Bihar': 'Patna'
+}
+
+for state in statesAndCapitals:
+	print(state)
+
 
 Coding problems
 Q76. Write a Python program to find the factorial of a given number.
