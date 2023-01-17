@@ -421,15 +421,85 @@ for state in statesAndCapitals:
 Coding problems
 Q76. Write a Python program to find the factorial of a given number.
 
+ans)
+     def factorial(k):
+    f=1
+    for i in range(1,k+1):
+        f=f*i 
+
+    return f 
+
 Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (PRT)/100
 
+ans)p=float(input("enter principle amount: "))
+r=float(input("enter rate : "))
+t=float(input("enter the tenure :"))
+
+simple_interest =p*r*t/100
+
+print(result)
+
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
+ans)
+      p=float(input("enter principle amount: "))
+r=float(input("enter rate : "))
+t=float(input("enter the tenure :"))
+
+amount=p*(1+r/100)**t
+ci=amount -p
+print("compund intrest : ",ci)
+
 
 Q79. Write a Python program to check if a number is prime or not.
+ans)
+def prime(k):
+    for i in range(2,k):
+        if k%2==0:
+            print("not a prime")
+            break 
+    else:
+        print("prime")
+
+R=7
+prime(R)        
 
 Q80. Write a Python program to check Armstrong Number.
+ans)
+
+n= 153
+sum =0
+cpoy=n
+order=len(str(n))
+while (n>0):
+    app=n%10
+    sum+=app**order
+    n=n//10
+if (sum ==cpoy):
+    print(cpoy,"is an armstrong")
+else:
+    print(cpoy,"not an armstrong")
+
 
 Q81. Write a Python program to find the n-th Fibonacci Number.
+ans)def fibonacy(k):
+    a=0
+    b=1
+    if k==1:
+        print(a)
+    else:
+        print(a)
+        print(b)
+        for i in range(2,k):
+
+            c=a+b
+            a=b
+            b=c
+            print(c)
+
+
+w= 10
+fibonacy(w)
+
 
 Q82. Write a Python program to interchange the first and last element in a list.
 
