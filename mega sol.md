@@ -502,6 +502,7 @@ fibonacy(w)
 
 
 Q82. Write a Python program to interchange the first and last element in a list.
+ans good moring venkata 
 
 Q83. Write a Python program to swap two elements in a list.
 
