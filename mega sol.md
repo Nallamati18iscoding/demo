@@ -545,6 +545,17 @@ Q96. Write a python program to print below pattern.
 * * * 
 * * * * 
 * * * * * 
+
+ans)     def starpat(m):
+    for i in range (0,m):
+        for j in range (0,i+1):
+            print("*",end="")
+        print("")        
+
+
+n=5
+starpat(n)
+
 Q97. Write a python program to print below pattern.
 
     *
@@ -552,6 +563,13 @@ Q97. Write a python program to print below pattern.
   ***
  ****
 *****
+ans)  def inverse_pattern():
+  n=5;i=0
+  while(i<=n):
+    print(" " * (n - i) +"*" * i)
+    i+=1
+
+inverse_pattern()
 Q98. Write a python program to print below pattern.
 
     * 
@@ -559,6 +577,26 @@ Q98. Write a python program to print below pattern.
   * * * 
  * * * * 
 * * * * * 
+
+ans) def triangle(n):
+	
+	k = n - 1
+
+	for i in range(0, n):
+
+		for j in range(0, k):
+			print(end=" ")
+	
+		k = k - 1
+	
+		for j in range(0, i+1):
+
+			print("* ", end="")
+	
+		print("\r")
+
+n = 5
+triangle(n)
 Q99. Write a python program to print below pattern.
 
 1 
@@ -566,6 +604,25 @@ Q99. Write a python program to print below pattern.
 1 2 3 
 1 2 3 4 
 1 2 3 4 5
+
+ans)def numpat(n):
+
+	num = 1
+
+	for i in range(0, n):
+
+		num = 1
+
+		for j in range(0, i+1):
+
+			print(num, end=" ")
+
+			num = num + 1
+
+		print("\r")
+
+n = 5
+numpat(n)
 Q100. Write a python program to print below pattern.
 
 A 
@@ -573,4 +630,23 @@ B B
 C C C 
 D D D D 
 E E E E E 
+
+ans)def alphapat(n):
+
+	num = 65
+
+	for i in range(0, n):
+	
+		for j in range(0, i+1):
+
+			ch = chr(num)
+		
+			print(ch, end=" ")
+	
+		num = num + 1
+	
+		print("\r")
+
+n = 5
+alphapat(n)
 
