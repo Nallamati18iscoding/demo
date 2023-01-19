@@ -502,7 +502,16 @@ fibonacy(w)
 
 
 Q82. Write a Python program to interchange the first and last element in a list.
-ans good moring venkata 
+ans)listrr=[2,22,33,44,55,6,7]
+leng=len(listrr)
+temporary=listrr[0]
+listrr[0]=listrr[leng-1]
+listrr[leng-1]=temporary
+
+print(listrr)
+
+
+
 
 Q83. Write a Python program to swap two elements in a list.
 
