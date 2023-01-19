@@ -513,13 +513,54 @@ print(listrr)
 
 
 
-Q83. Write a Python program to swap two elements in a list.
+Q83. Write a Python program to swap two elements in a list.\
+ans)
+listrr=[2,22,33,44,55,6,7]
+listrr[0],listrr[1]=listrr[1],listrr[0]
+print(listrr)
 
 Q84. Write a Python program to find N largest element from a list.
+ans)
+def n_max_elements(list1, N):
+	final_list = []
+
+	for i in range(0, N):
+		max1 = 0
+		
+		for j in range(len(list1)):	
+			if list1[j] > max1:
+				max1 = list1[j];
+				
+		list1.remove(max1);
+		final_list.append(max1)
+		
+	print(final_list)
+
+list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+N = 3
+
+n_max_elements(list1, N)
 
 Q85. Write a Python program to find cumulative sum of a list.
+ans)
+    def cumulative_sum(lists):
+	cu_list = []
+	length = len(lists)
+	cu_list = [sum(lists[0:x:1]) for x in range(0, length+1)]
+	return cu_list[1:]
+
+lists = [10, 20, 30, 40, 50]
+print(f"Cumulative sum of the list is {cumulative_sum(lists)}")
 
 Q86. Write a Python program to check if a string is palindrome or not.
+ans)  
+   def isPalindrome(s):
+  if s == s[::-1]:
+	  return f"{s} is palindrome"
+  return f"{s} is not palindrome"
+
+s = "noon"
+isPalindrome(s)
 
 Q87. Write a Python program to remove i'th element from a string.
 
